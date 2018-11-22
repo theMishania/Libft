@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 20:19:20 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/21 20:39:11 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/22 19:48:55 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	{
 		s1++;
 		s2++;
+		n--;
 	}
 	return (n) ? (*(const unsigned char *)s1 - *(const unsigned char *)s2) : 0;
 }
