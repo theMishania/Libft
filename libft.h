@@ -6,7 +6,7 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 20:14:25 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/23 14:06:18 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/23 15:00:17 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,12 @@ void 	ft_array_int_swap(int *nums, int i, int j);
 void 	ft_selection_int_sort(int *nums, int len);
 void	ft_array_chr_swap(char *str, int i, int j);
 void 	ft_selection_chr_sort(char *str);
+void 	*ft_memalloc(size_t size);
+void 	ft_memdel(void **ap);
+char	*ft_strnew(size_t size);
+void 	ft_strdel(char **as);
+void 	ft_strclr(char *s);
+void 	ft_striter(char *s, void(*f)(char *));
+void 	ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 #endif
