@@ -6,7 +6,7 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 20:14:25 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/23 00:46:34 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/23 14:06:18 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,11 @@ void 	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void *ft_memmove(void *dst, const void *src, size_t len);
 void *ft_memchr(const void *s, int c, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
+void 	ft_insert_int_sort(int *nums, int len);
+void	ft_insert_chr_sort(char *str);
+void 	ft_array_int_swap(int *nums, int i, int j);
+void 	ft_selection_int_sort(int *nums, int len);
+void	ft_array_chr_swap(char *str, int i, int j);
+void 	ft_selection_chr_sort(char *str);
 
 #endif
