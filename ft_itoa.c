@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 22:15:50 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/24 22:40:40 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/25 00:52:15 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ static int	get_size(long nbr)
 	return (size);
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
-	char *result;
-	long nbr;
-	int size;
-	int index;
+	char	*result;
+	long	nbr;
+	int		size;
+	int		index;
 
 	nbr = (long)n;
 	if (nbr < 0)

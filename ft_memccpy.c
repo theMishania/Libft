@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 17:26:53 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/24 19:25:30 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/25 00:51:07 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	char *dst_tempo;
-	char *src_tempo;
-	size_t			index;
+	char	*dst_tempo;
+	char	*src_tempo;
+	size_t	index;
 
 	dst_tempo = (char *)dst;
 	src_tempo = (char *)src;
