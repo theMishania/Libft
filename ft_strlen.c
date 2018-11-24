@@ -6,11 +6,11 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 21:47:31 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/20 21:14:13 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/24 18:27:40 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 int		ft_strlen(const char *str)
 {
