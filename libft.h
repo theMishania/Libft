@@ -6,7 +6,7 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 20:14:25 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/24 22:37:16 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/24 23:37:59 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <string.h>
 
 int		ft_putchar(int c);
-void	ft_putstr(char *str);
+void	ft_putstr(char const *str);
 size_t	ft_strlen(const char *str);
 char	*ft_strdup(const char *src);
 int		ft_atoi(const char *str);
