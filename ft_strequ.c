@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 17:39:11 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/24 19:56:17 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/24 21:22:06 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int		ft_strequ(char const *s1, char const *s2)
 {
+	if (!s1 || !s2)
+		return (0);
 	if (ft_strlen(s1) != ft_strlen(s2))
 		return (0);
 	while (*s1)

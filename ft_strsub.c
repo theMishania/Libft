@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 17:54:37 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/24 17:54:58 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/24 21:56:59 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*result;
 	int		index;
-
+	
+	if (!s)
+		return (NULL);
 	if (!(result = (char *)malloc(sizeof(*s) * len + 1)))
 		return (NULL);
 	index = 0;

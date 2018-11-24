@@ -6,13 +6,17 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 17:45:56 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/21 17:49:45 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/24 23:11:24 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+int		ft_putchar(int c)
 {
-	write(1, &c, 1);
+	unsigned long cha;
+
+	cha = (unsigned long)c;	
+	write(1, &cha, 1);
+	return (c);
 }

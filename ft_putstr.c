@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 17:48:21 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/21 17:50:05 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/24 22:08:13 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr(char *str)
 {
+	if (!str)
+		return ;
 	while (*str)
 	{
 		ft_putchar(*str);

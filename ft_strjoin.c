@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 17:41:44 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/24 17:42:50 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/24 22:05:53 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*tempo;
 	int		result_len;
 
+	if (!s1)
+		return (NULL);
 	result_len = ft_strlen(s1) + ft_strlen(s2) + 1;
 	if (!(result = (char *)malloc(sizeof(*s1) * result_len)))
 		return (NULL);
