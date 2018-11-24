@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 22:51:36 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/20 21:14:39 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/24 20:01:08 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,11 @@
 char	*ft_strdup(const char *src)
 {
 	char	*result;
-	int		index;
-
-	result = (char *)malloc(sizeof(*src) * ft_strlen(src));
-	index = 0;
-	while (src[index] != '\0')
-	{
-		result[index] = src[index];
-		index++;
-	}
-	result[index] = '\0';
+	size_t	len;
+	
+	len = ft_strlen(src) + 1;	
+	if (!(result = malloc(sizeof(*src) * ft_strlen(src) + 1)))
+		return (NULL);
+	ft_memcpy(result, src, len);
 	return (result);
 }
