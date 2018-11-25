@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 20:14:25 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/25 00:45:51 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/25 17:36:54 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,6 @@ void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
+char    *ft_strrim(char const *s);
 
 #endif
