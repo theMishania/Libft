@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/25 18:29:09 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/25 18:43:38 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/26 19:23:50 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 t_list  *ft_lstnew(void const *content, size_t content_size)
 {
-    t_list  *tempo;
-    void    *tempo_content;
+    t_list *tempo;
 
     if (!(tempo = (t_list *)malloc(sizeof(t_list))))
         return (NULL);
@@ -26,9 +25,12 @@ t_list  *ft_lstnew(void const *content, size_t content_size)
     }
     else
     {
-        if (!(tempo_content = malloc(content_size)))
+        if (!(tempo->content = malloc(content_size)))
+        {
+            free(tempo);
             return (NULL);
-        tempo->content = tempo_content;
+        }
+        ft_memcpy(tempo->content, content, content_size);
         tempo->content_size = content_size;
     }
     tempo->next = NULL;
