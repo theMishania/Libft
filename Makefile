@@ -21,7 +21,7 @@ $(NAME):
 clean:
 	@/bin/rm -f *.o
 
-fclean:
+fclean: clean
 	@/bin/rm -f $(NAME)
 
 re: fclean all

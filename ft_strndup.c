@@ -18,7 +18,7 @@ char    *ft_strndup(char const *s, size_t n)
 
     if (!(result = (char *)malloc(sizeof(char) * n + 1)))
         return (NULL);
-    result = strncpy(result, s, n);
+    result = ft_strncpy(result, s, n);
     result[n] = '\0';
     return (result);
 }
