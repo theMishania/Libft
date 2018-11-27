@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 20:14:25 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/26 21:01:44 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/27 19:14:31 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,7 @@ void    ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void    ft_lstadd(t_list **alst, t_list *new);
 void    ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list  *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+char    *ft_strndup(char const *s, size_t n);
+char    **ft_strsplit(char const *s, char c);
 
 #endif
