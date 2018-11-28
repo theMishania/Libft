@@ -6,7 +6,7 @@
 /*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 17:47:44 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/24 21:06:38 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/28 20:58:38 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*result;
 	unsigned int	index;
-	
+
 	if (!s || !f)
 		return (NULL);
 	if (!(result = (char *)malloc(sizeof(*s) * ft_strlen(s) + 1)))
