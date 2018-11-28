@@ -6,7 +6,7 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 20:18:31 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/28 20:41:15 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/28 21:45:51 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	ft_insert_int_sort(int *nums, int len)
 	int j;
 	int tempo;
 
+	if (!nums)
+		return ;
 	index = 1;
 	while (index < len)
 	{

@@ -6,7 +6,7 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 20:10:43 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/28 20:39:35 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/28 21:43:13 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_array_int_swap(int *nums, int i, int j)
 {
 	int tempo;
 
-	if (!nums)
+	if (!nums || nums[i] || nums[j])
 		return ;
 	tempo = nums[i];
 	nums[i] = nums[j];

@@ -6,7 +6,7 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 20:19:23 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/28 20:40:27 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/28 21:46:33 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	ft_insert_chr_sort(char *str)
 	int		index;
 	int		j;
 
+	if (!str)
+		return ;
 	index = 1;
 	while (str[index])
 	{
