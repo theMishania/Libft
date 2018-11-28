@@ -6,7 +6,7 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 20:14:25 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/28 21:57:19 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/28 22:04:09 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# define WHITESPACED(a) a == ' ' || a == '\n' || a == '\t'
 
 typedef struct		s_list
 {

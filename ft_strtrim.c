@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/25 16:15:48 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/28 21:02:16 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/11/28 22:04:10 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-#define WHITESPACED(a) a == ' ' || a == '\n' || a == '\t'
 
 char	*ft_strtrim(char const *s)
 {
