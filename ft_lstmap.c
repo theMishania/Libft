@@ -6,13 +6,13 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/26 20:51:05 by cocummin          #+#    #+#             */
-/*   Updated: 2018/12/04 19:33:34 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/12/04 20:26:18 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static ft_lstclear(t_list *list)
+static void	ft_lstclear(t_list *list)
 {
 	while (list)
 	{
@@ -22,7 +22,7 @@ static ft_lstclear(t_list *list)
 	}
 }
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*result;
 	t_list	*tempo;
@@ -41,7 +41,6 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 			ft_lstclear(result);
 			return (NULL);
 		}
-			
 		tempo->next = tmp_new;
 		tempo = tempo->next;
 		lst = lst->next;
