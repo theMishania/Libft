@@ -6,11 +6,11 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 16:40:22 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/28 21:09:18 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/12/04 16:53:33 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static int	get_wrds_cnt(char const *s, char c)
 {
