@@ -6,7 +6,7 @@
 /*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 16:40:22 by cocummin          #+#    #+#             */
-/*   Updated: 2018/12/04 16:53:33 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/12/05 19:20:09 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,16 @@ static int	get_wrds_cnt(char const *s, char c)
 	return (result);
 }
 
+static void	ft_clear(char **array, int n)
+{
+	int index;
+
+	index = 0;
+	while (index < n)
+		free(array[index++]);
+	free(array);
+}
+
 char		**ft_strsplit(char const *s, char c)
 {
 	char	**result;
@@ -53,7 +63,8 @@ char		**ft_strsplit(char const *s, char c)
 		while (s[index] && s[index] != c)
 			index++;
 		if (index > j)
-			result[z++] = ft_strndup(s + j, index - j);
+			if (!(result[z++] = ft_strndup(s + j, index - j)))
+				ft_clear(result, z);
 	}
 	result[z] = 0;
 	return (result);
