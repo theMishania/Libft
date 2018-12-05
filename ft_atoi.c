@@ -3,18 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cocummin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cocummin <cocummin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 18:03:15 by cocummin          #+#    #+#             */
-/*   Updated: 2018/11/21 18:08:22 by cocummin         ###   ########.fr       */
+/*   Updated: 2018/12/05 18:41:01 by cocummin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int		ft_atoi(const char *str)
 {
-	int index;
-	int sign;
-	int result;
+	int			index;
+	int			sign;
+	long long	result;
+	long long	tempo;
 
 	sign = 1;
 	index = 0;
@@ -27,8 +30,10 @@ int		ft_atoi(const char *str)
 		index++;
 	while (str[index] >= '0' && str[index] <= '9')
 	{
-		result = result * 10 + (str[index] - 48);
-		index++;
+		tempo = result;
+		result = result * 10 + (str[index++] - 48);
+		if (tempo > result)
+			return (sign < 0) ? 0 : -1;
 	}
-	return (sign * result);
+	return (sign * (int)result);
 }
